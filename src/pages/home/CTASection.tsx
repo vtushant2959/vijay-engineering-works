@@ -40,13 +40,13 @@ export function CTASection() {
             Get Free Consultation
           </LinkButton>
           <LinkButton
-            href="tel:+919876543210"
+            href="tel:+919997290321"
             variant="outline"
             size="large"
             className="!border-white/30 !text-white hover:!bg-white/10"
             leftIcon={<Phone className="w-5 h-5" />}
           >
-            +91 98765 43210
+            +91 99972 90321
           </LinkButton>
         </motion.div>
 
@@ -64,11 +64,11 @@ export function CTASection() {
           </div>
           <div className="flex items-center gap-2">
             <Envelope className="w-4 h-4" />
-            <span>info@vijayengineeringworks.com</span>
+            <span>Vijayengineeringworks786@yahoo.com</span>
           </div>
           <div className="flex items-center gap-2">
             <MapPin className="w-4 h-4" />
-            <span>Delhi NCR, India</span>
+            <span>Agra, Uttar Pradesh</span>
           </div>
         </motion.div>
       </div>

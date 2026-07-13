@@ -81,9 +81,9 @@ export function TermsPage() {
             <p>
               For questions about these terms, contact us at:
               <br />
-              Email: legal@vijayengineeringworks.com
+              Email: Vijayengineeringworks786@yahoo.com
               <br />
-              Phone: +91 98765 43210
+              Phone: +91 99972 90321
             </p>
           </div>
         </Card>

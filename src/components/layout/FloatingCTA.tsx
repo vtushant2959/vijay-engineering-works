@@ -58,7 +58,7 @@ export function FloatingCTA() {
 
       {/* WhatsApp */}
       <motion.a
-        href="https://wa.me/919876543210?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20machinery."
+        href="https://wa.me/919997290321?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20machinery."
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0 }}
@@ -72,7 +72,7 @@ export function FloatingCTA() {
 
       {/* Call Now */}
       <motion.a
-        href="tel:+919876543210"
+        href="tel:+919997290321"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.7, type: 'spring' }}

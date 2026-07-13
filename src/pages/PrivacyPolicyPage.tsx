@@ -79,9 +79,9 @@ export function PrivacyPolicyPage() {
             <p>
               For any questions regarding this privacy policy, please contact us at:
               <br />
-              Email: privacy@vijayengineeringworks.com
+              Email: Vijayengineeringworks786@yahoo.com
               <br />
-              Phone: +91 98765 43210
+              Phone: +91 99972 90321
             </p>
           </div>
         </Card>

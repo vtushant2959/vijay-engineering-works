@@ -168,7 +168,7 @@ export function DealershipPage() {
                   </div>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <Input label="Email" type="email" placeholder="email@company.com" error={errors.email?.message} {...register('email')} />
-                    <Input label="Phone" type="tel" placeholder="+91 98765 43210" error={errors.phone?.message} {...register('phone')} />
+                    <Input label="Phone" type="tel" placeholder="+91 99972 90321" error={errors.phone?.message} {...register('phone')} />
                   </div>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <Input label="City" placeholder="Mumbai" error={errors.city?.message} {...register('city')} />

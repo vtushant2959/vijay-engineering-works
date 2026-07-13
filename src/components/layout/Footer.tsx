@@ -67,17 +67,17 @@ export function Footer() {
 
             {/* Contact Info */}
             <div className="space-y-3 text-sm">
-              <a href="https://maps.google.com/?q=Sector+15,+Noida,+Uttar+Pradesh+201301" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 hover:text-white transition-colors">
+              <a href="https://maps.google.com/?q=H.+No.+A6-490,+Kamla+Nagar,+Block+A,+Hariparwat+Ward,+Agra,+Uttar+Pradesh" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 hover:text-white transition-colors">
                 <MapPin className="w-5 h-5 shrink-0 mt-0.5 text-primary-400" />
-                <span>Phase 2, Sector 15, Industrial Area, Noida, Delhi NCR, India - 201301</span>
+                <span>H. No. A6-490, Kamla Nagar, Block A, Hariparwat Ward, Opp. Navjyoti Building, Agra, Uttar Pradesh</span>
               </a>
-              <a href="tel:+919876543210" className="flex items-center gap-3 hover:text-white transition-colors">
+              <a href="tel:+919997290321" className="flex items-center gap-3 hover:text-white transition-colors">
                 <Phone className="w-5 h-5 shrink-0 text-primary-400" />
-                <span>+91 98765 43210 | +91 11 2345 6789</span>
+                <span>+91 99972 90321</span>
               </a>
-              <a href="mailto:info@vijayengineeringworks.com" className="flex items-center gap-3 hover:text-white transition-colors">
+              <a href="mailto:Vijayengineeringworks786@yahoo.com" className="flex items-center gap-3 hover:text-white transition-colors">
                 <Envelope className="w-5 h-5 shrink-0 text-primary-400" />
-                <span>info@vijayengineeringworks.com</span>
+                <span>Vijayengineeringworks786@yahoo.com</span>
               </a>
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 shrink-0 text-primary-400" />

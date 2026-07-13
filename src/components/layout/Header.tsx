@@ -122,13 +122,13 @@ export function Header() {
       <div className="bg-primary-700 text-white text-sm hidden lg:block">
         <div className="container-custom py-2 flex items-center justify-between">
           <div className="flex items-center gap-6">
-            <a href="tel:+919876543210" className="flex items-center gap-2 hover:text-accent-300 transition-colors">
+            <a href="tel:+919997290321" className="flex items-center gap-2 hover:text-accent-300 transition-colors">
               <Phone className="w-4 h-4" />
-              <span>+91 98765 43210</span>
+              <span>+91 99972 90321</span>
             </a>
-            <a href="mailto:info@vijayengineeringworks.com" className="flex items-center gap-2 hover:text-accent-300 transition-colors">
+            <a href="mailto:Vijayengineeringworks786@yahoo.com" className="flex items-center gap-2 hover:text-accent-300 transition-colors">
               <Envelope className="w-4 h-4" />
-              <span>info@vijayengineeringworks.com</span>
+              <span>Vijayengineeringworks786@yahoo.com</span>
             </a>
           </div>
           <div className="flex items-center gap-4">
@@ -218,7 +218,7 @@ export function Header() {
             <LinkButton href="/contact" variant="outline" size="small">
               Get Quote
             </LinkButton>
-            <LinkButton href="tel:+919876543210" variant="primary" size="small" leftIcon={<Phone className="w-4 h-4" />}>
+            <LinkButton href="tel:+919997290321" variant="primary" size="small" leftIcon={<Phone className="w-4 h-4" />}>
               Call Now
             </LinkButton>
           </div>
@@ -284,8 +284,8 @@ export function Header() {
                 <LinkButton href="/contact" variant="primary" className="w-full">
                   Get a Quote
                 </LinkButton>
-                <LinkButton href="tel:+919876543210" variant="outline" className="w-full" leftIcon={<Phone className="w-4 h-4" />}>
-                  Call +91 98765 43210
+                <LinkButton href="tel:+919997290321" variant="outline" className="w-full" leftIcon={<Phone className="w-4 h-4" />}>
+                  Call +91 99972 90321
                 </LinkButton>
               </div>
             </motion.div>

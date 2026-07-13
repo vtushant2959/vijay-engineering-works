@@ -10,9 +10,9 @@ import { getProductBySlug } from '../data/products';
 import { useShortlist } from '../hooks/useShortlist';
 
 const contactInfo = [
-  { icon: MapPin, title: 'Visit Us', content: 'Phase 2, Sector 15, Industrial Area, Noida, Delhi NCR, India - 201301' },
-  { icon: Phone, title: 'Call Us', content: '+91 98765 43210, +91 11 2345 6789' },
-  { icon: Envelope, title: 'Email Us', content: 'info@vijayengineeringworks.com' },
+  { icon: MapPin, title: 'Visit Us', content: 'H. No. A6-490, Kamla Nagar, Block A, Hariparwat Ward, Opp. Navjyoti Building, Agra, Uttar Pradesh' },
+  { icon: Phone, title: 'Call Us', content: '+91 99972 90321' },
+  { icon: Envelope, title: 'Email Us', content: 'Vijayengineeringworks786@yahoo.com' },
   { icon: Clock, title: 'Working Hours', content: 'Mon - Sat: 9:00 AM - 6:00 PM' },
 ];
 
@@ -150,7 +150,7 @@ export function ContactPage() {
                   </div>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <Input label="Email Address" type="email" placeholder="email@company.com" error={errors.email?.message} {...register('email')} />
-                    <Input label="Phone Number" type="tel" placeholder="+91 98765 43210" error={errors.phone?.message} {...register('phone')} />
+                    <Input label="Phone Number" type="tel" placeholder="+91 99972 90321" error={errors.phone?.message} {...register('phone')} />
                   </div>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <Select label="Inquiry Type" options={inquiryTypes} error={errors.inquiryType?.message} {...register('inquiryType')} />
@@ -222,7 +222,7 @@ export function ContactPage() {
             <div className="aspect-video rounded-2xl overflow-hidden border border-secondary-200">
               <iframe
                 title="Vijay Engineering Works location map"
-                src="https://maps.google.com/maps?q=Sector%2015%2C%20Noida%2C%20Uttar%20Pradesh%20201301&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=H.%20No.%20A6-490%2C%20Kamla%20Nagar%2C%20Block%20A%2C%20Hariparwat%20Ward%2C%20Agra%2C%20Uttar%20Pradesh&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 className="w-full h-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -245,7 +245,7 @@ export function ContactPage() {
             <Button
               variant="accent"
               size="large"
-              onClick={() => window.open('https://wa.me/919876543210', '_blank', 'noopener,noreferrer')}
+              onClick={() => window.open('https://wa.me/919997290321', '_blank', 'noopener,noreferrer')}
             >
               Chat on WhatsApp
             </Button>
@@ -253,9 +253,9 @@ export function ContactPage() {
               variant="outline"
               size="large"
               className="!border-white/30 !text-white hover:!bg-white/10"
-              onClick={() => { window.location.href = 'tel:+919876543210'; }}
+              onClick={() => { window.location.href = 'tel:+919997290321'; }}
             >
-              Call +91 98765 43210
+              Call +91 99972 90321
             </Button>
           </div>
         </div>

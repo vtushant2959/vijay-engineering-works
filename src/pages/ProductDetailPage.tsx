@@ -120,7 +120,7 @@ export function ProductDetailPage() {
 
             {/* Actions */}
             <div className="flex flex-wrap gap-4">
-              <LinkButton href="tel:+919876543210" variant="primary" size="large" leftIcon={<Phone className="w-5 h-5" />}>
+              <LinkButton href="tel:+919997290321" variant="primary" size="large" leftIcon={<Phone className="w-5 h-5" />}>
                 Call for Price
               </LinkButton>
               <LinkButton href="/contact" variant="outline" size="large">
@@ -230,7 +230,7 @@ export function ProductDetailPage() {
               Get Quote
             </LinkButton>
             <LinkButton
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919997290321"
               variant="outline"
               size="large"
               className="!border-white/30 !text-white hover:!bg-white/10"

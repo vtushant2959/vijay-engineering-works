@@ -63,7 +63,7 @@ export function FAQPage() {
               Contact Us
             </LinkButton>
             <LinkButton
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919997290321"
               variant="outline"
               size="large"
               className="!border-white/30 !text-white hover:!bg-white/10"

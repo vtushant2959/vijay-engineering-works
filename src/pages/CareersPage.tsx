@@ -12,7 +12,7 @@ const jobs = [
     title: 'Service Engineer',
     department: 'technical',
     departmentLabel: 'Technical',
-    location: 'Delhi NCR',
+    location: 'Agra, UP',
     type: 'Full Time',
     experience: '3-5 years',
     description: 'Install, commission, and maintain footwear machinery at client locations across India.',
@@ -23,7 +23,7 @@ const jobs = [
     title: 'Sales Executive',
     department: 'sales',
     departmentLabel: 'Sales',
-    location: 'Delhi NCR',
+    location: 'Agra, UP',
     type: 'Full Time',
     experience: '2-4 years',
     description: 'Develop and maintain client relationships, generate leads, and achieve sales targets.',
@@ -34,7 +34,7 @@ const jobs = [
     title: 'Production Supervisor',
     department: 'manufacturing',
     departmentLabel: 'Manufacturing',
-    location: 'Delhi NCR',
+    location: 'Agra, UP',
     type: 'Full Time',
     experience: '5-8 years',
     description: 'Supervise machine production, ensure quality standards, and manage workshop operations.',
@@ -108,7 +108,7 @@ export function CareersPage() {
       <Section background="white">
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {[
-            { icon: MapPin, title: 'Location', desc: 'Modern facility in Delhi NCR with easy connectivity' },
+            { icon: MapPin, title: 'Location', desc: 'Modern facility in Agra, UP with easy connectivity' },
             { icon: Users, title: 'Team', desc: 'Collaborative environment across technical, sales, and manufacturing teams' },
             { icon: Envelope, title: 'Growth', desc: 'Training programs and career advancement opportunities' },
           ].map((item, index) => (
@@ -173,7 +173,7 @@ export function CareersPage() {
                     Apply Now
                   </Button>
                   <LinkButton
-                    href={`mailto:careers@vijayengineeringworks.com?subject=${encodeURIComponent(`Application: ${job.title}`)}`}
+                    href={`mailto:Vijayengineeringworks786@yahoo.com?subject=${encodeURIComponent(`Application: ${job.title}`)}`}
                     variant="ghost"
                     size="small"
                   >
@@ -213,7 +213,7 @@ export function CareersPage() {
                   <Input label="Email" type="email" placeholder="email@example.com" error={errors.email?.message} {...register('email')} />
                 </div>
                 <div className="grid sm:grid-cols-2 gap-4">
-                  <Input label="Phone" type="tel" placeholder="+91 98765 43210" error={errors.phone?.message} {...register('phone')} />
+                  <Input label="Phone" type="tel" placeholder="+91 99972 90321" error={errors.phone?.message} {...register('phone')} />
                   <Select label="Department" options={departmentOptions} error={errors.department?.message} {...register('department')} />
                 </div>
                 <Textarea label="Cover Letter" placeholder="Tell us about yourself and your interests..." error={errors.coverLetter?.message} {...register('coverLetter')} />
@@ -224,7 +224,7 @@ export function CareersPage() {
                   <div className="flex items-center gap-4">
                     <input id="cv-upload" type="file" className="text-sm" accept=".pdf,.doc,.docx" />
                   </div>
-                  <p className="mt-1.5 text-xs text-secondary-500">Max 5MB (PDF, DOC). File attachments aren't uploaded automatically yet — please also email your CV to careers@vijayengineeringworks.com after submitting.</p>
+                  <p className="mt-1.5 text-xs text-secondary-500">Max 5MB (PDF, DOC). File attachments aren't uploaded automatically yet — please also email your CV to Vijayengineeringworks786@yahoo.com after submitting.</p>
                 </div>
                 <Checkbox
                   label="I agree to be contacted by Vijay Engineering Works about my application, per the Privacy Policy."
