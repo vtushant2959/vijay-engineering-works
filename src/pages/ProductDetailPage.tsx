@@ -59,7 +59,7 @@ export function ProductDetailPage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-secondary-100 mb-4">
+            <div className="aspect-square rounded-2xl overflow-hidden bg-secondary-100 mb-4">
               <img
                 key={product.images[activeImage]}
                 src={product.images[activeImage]}
@@ -186,7 +186,7 @@ export function ProductDetailPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {relatedProducts.map((related) => (
               <Card key={related.slug} padding="none" hover>
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className="aspect-square overflow-hidden bg-secondary-50">
                   <img
                     src={related.images[0]}
                     alt={related.name}

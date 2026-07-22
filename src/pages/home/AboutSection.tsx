@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Section, SectionHeader, LinkButton, ArrowRight, Check } from '../../components/ui';
-import { pick, factoryImages, machineryImages } from '../../data/images';
+import { productPhoto } from '../../data/images';
 
 const features = [
   { label: 'Premium Materials', desc: 'High-grade steel and components' },
@@ -25,8 +25,8 @@ export function AboutSection() {
             <div className="space-y-4">
               <div className="rounded-2xl overflow-hidden aspect-[3/4]">
                 <img
-                  src={pick(factoryImages, 6, 500)}
-                  alt="Precision engineering at Vijay Engineering Works"
+                  src={productPhoto(17)}
+                  alt="Twin-Head Lasting Machine built by Vijay Engineering Works"
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
@@ -48,8 +48,8 @@ export function AboutSection() {
               </div>
               <div className="rounded-2xl overflow-hidden aspect-[3/4]">
                 <img
-                  src={pick(machineryImages, 23, 500)}
-                  alt="Manufacturing facility"
+                  src={productPhoto(31)}
+                  alt="Hydraulic Clicker Cutting Press built by Vijay Engineering Works"
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"

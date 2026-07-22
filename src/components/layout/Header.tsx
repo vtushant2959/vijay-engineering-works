@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { LinkButton, Menu, X, ChevronDown, Phone, Envelope } from '../ui';
 import { LogoMark } from './LogoMark';
+import { categories as productCategories } from '../../data/products';
 
 interface NavItem {
   label: string;
@@ -15,18 +16,10 @@ const navigation: NavItem[] = [
   {
     label: 'Products',
     href: '/products',
-    children: [
-      { label: 'Shoe Making Machines', href: '/products?category=shoe-making-machines' },
-      { label: 'Sole Press Machines', href: '/products?category=sole-press-machines' },
-      { label: 'Hydraulic Press Machines', href: '/products?category=hydraulic-press-machines' },
-      { label: 'Shoe Cutting Machines', href: '/products?category=shoe-cutting-machines' },
-      { label: 'Stitching Machines', href: '/products?category=stitching-machines' },
-      { label: 'Toe Lasting Machines', href: '/products?category=toe-lasting-machines' },
-      { label: 'Heel Lasting Machines', href: '/products?category=heel-lasting-machines' },
-      { label: 'Sanding Machines', href: '/products?category=sanding-machines' },
-      { label: 'Polishing Machines', href: '/products?category=polishing-machines' },
-      { label: 'Conveyor Systems', href: '/products?category=conveyor-systems' },
-    ],
+    children: productCategories.map((category) => ({
+      label: category.name,
+      href: `/products?category=${category.id}`,
+    })),
   },
   {
     label: 'Industries',

@@ -1,9 +1,9 @@
 import { Section, SectionHeader, Card, LinkButton, Check, ArrowRight, ShieldCheck, Award, Users, Beaker } from '../components/ui';
 import { motion } from 'framer-motion';
-import { pick, factoryImages, machineryImages } from '../data/images';
+import { productPhoto } from '../data/images';
 
 const milestones = [
-  { year: '1985', title: 'Foundation', desc: 'Vijay Engineering Works established in Delhi' },
+  { year: '1985', title: 'Foundation', desc: 'Vijay Engineering Works established in Agra' },
   { year: '1995', title: 'First Export', desc: 'Started exporting to African markets' },
   { year: '2005', title: 'ISO Certification', desc: 'Achieved ISO 9001:2000 certification' },
   { year: '2010', title: 'New Facility', desc: 'Moved to larger 50,000 sq ft facility' },
@@ -59,8 +59,8 @@ export function AboutPage() {
             viewport={{ once: true }}
           >
             <img
-              src={pick(factoryImages, 3, 700)}
-              alt="Vijay Engineering Works manufacturing facility"
+              src={productPhoto(19)}
+              alt="Sole Press Machine built by Vijay Engineering Works"
               className="rounded-2xl shadow-medium w-full aspect-[4/3] object-cover"
               loading="lazy"
             />
@@ -76,12 +76,12 @@ export function AboutPage() {
               align="left"
             />
             <p className="text-secondary-600 mb-6 leading-relaxed">
-              Vijay Engineering Works began in 1985 as a small workshop in Delhi, founded by engineer
+              Vijay Engineering Works began in 1985 as a small workshop in Agra, founded by engineer
               Shri Vijay Kumar with a vision to provide quality machinery for India's growing footwear industry.
             </p>
             <p className="text-secondary-600 mb-6 leading-relaxed">
               Starting with basic shoe cutting machines, we expanded our product range based on customer
-              feedback and industry needs. Today, we manufacture across 10 machine categories,
+              feedback and industry needs. Today, we manufacture across 9 machine categories,
               serving clients across India, Africa, and Southeast Asia.
             </p>
             <p className="text-secondary-600 leading-relaxed">
@@ -212,14 +212,14 @@ export function AboutPage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src={pick(machineryImages, 6, 500)}
-              alt="CNC machining at our facility"
+              src={productPhoto(27)}
+              alt="Automatic Lasting Machine on our factory floor"
               className="rounded-2xl w-full aspect-square object-cover"
               loading="lazy"
             />
             <img
-              src={pick(factoryImages, 4, 500)}
-              alt="Factory floor"
+              src={productPhoto(1)}
+              alt="Heat Setter Machine on our factory floor"
               className="rounded-2xl w-full aspect-square object-cover mt-8"
               loading="lazy"
             />

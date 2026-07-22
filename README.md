@@ -47,4 +47,4 @@ The Contact, Careers, Dealership, and Newsletter forms insert into a Supabase pr
 
 ## Imagery
 
-Product, industry, and blog photography is sourced from [Pexels](https://www.pexels.com/license/) under its free commercial-use license (no attribution required). See `src/data/images.ts` for the curated set. Swap in real photography of your facility and machinery whenever it's available — replace the corresponding URLs in `src/data/*.ts`.
+All product, industry, blog, and gallery photography is the company's own machinery photography, stored in `public/products/` (resized + JPEG-compressed from the original files) and referenced via `src/data/images.ts`. The factory walkthrough video lives at `public/videos/factory-machinery.mp4`. To add a new machine photo: drop the file in `public/products/`, reference it with `productPhoto(n)` in `src/data/products.ts`, and it'll automatically show up anywhere that product's images are used (catalog, detail page, gallery).

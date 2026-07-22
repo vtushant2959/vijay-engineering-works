@@ -1,6 +1,6 @@
 import { Section, SectionHeader, Card, LinkButton, ArrowRight, Truck, Cog, Wrench, Users, ShieldCheck, Check, BuildingFactory2 } from '../components/ui';
 import { motion } from 'framer-motion';
-import { pick, machineryImages, factoryImages } from '../data/images';
+import { productPhoto } from '../data/images';
 
 const services = [
   {
@@ -9,7 +9,7 @@ const services = [
     description: 'Complete planning and consultancy for new footwear manufacturing units including layout design, machinery selection, and process optimization.',
     icon: BuildingFactory2,
     features: ['Factory Layout Planning', 'Machinery Selection', 'Process Design', 'Cost Estimation'],
-    image: pick(factoryImages, 0, 700),
+    image: productPhoto(15),
   },
   {
     id: 'turnkey-projects',
@@ -17,7 +17,7 @@ const services = [
     description: 'End-to-end project execution from planning to commissioning, delivering ready-to-operate manufacturing facilities.',
     icon: Truck,
     features: ['Complete Setup', 'Single Point Contact', 'Timeline Delivery', 'Documentation'],
-    image: pick(factoryImages, 1, 700),
+    image: productPhoto(27),
   },
   {
     id: 'installation-services',
@@ -25,7 +25,7 @@ const services = [
     description: 'Professional machine installation, calibration, and commissioning by trained technicians with full support.',
     icon: Cog,
     features: ['Expert Installation', 'Calibration', 'Testing', 'Certification'],
-    image: pick(machineryImages, 20, 700),
+    image: productPhoto(19),
   },
   {
     id: 'maintenance-programs',
@@ -33,7 +33,7 @@ const services = [
     description: 'Preventive and breakdown maintenance services with genuine spare parts and factory-trained technicians.',
     icon: Wrench,
     features: ['Preventive Maintenance', 'AMC Packages', 'Spare Parts', 'Quick Response'],
-    image: pick(machineryImages, 21, 700),
+    image: productPhoto(24),
   },
   {
     id: 'operator-training',
@@ -41,7 +41,7 @@ const services = [
     description: 'Comprehensive training programs for machine operators covering operation, maintenance, and safety.',
     icon: Users,
     features: ['Hands-on Training', 'Safety Protocols', 'Operation Manuals', 'Certification'],
-    image: pick(factoryImages, 2, 700),
+    image: productPhoto(11),
   },
   {
     id: 'technical-support',
@@ -49,7 +49,7 @@ const services = [
     description: '24/7 technical support for troubleshooting, optimization, and performance improvement.',
     icon: ShieldCheck,
     features: ['Phone Support', 'Video Support', 'On-site Visits', 'Remote Monitoring'],
-    image: pick(machineryImages, 22, 700),
+    image: productPhoto(1),
   },
 ];
 

@@ -1,11 +1,13 @@
 import { useEffect, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Section, Modal, LinkButton, ArrowRight, ChevronLeft, ChevronRight } from '../components/ui';
+import { Section, Modal, LinkButton, ArrowRight, ChevronLeft, ChevronRight, Play } from '../components/ui';
 import { galleryItems, galleryCategories, type GalleryItem } from '../data/gallery';
+import { productPhoto, factoryVideo } from '../data/images';
 
 export function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState<(typeof galleryCategories)[number]>('All');
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   const filteredItems = useMemo<GalleryItem[]>(
     () => (activeCategory === 'All' ? galleryItems : galleryItems.filter((item) => item.category === activeCategory)),
@@ -42,7 +44,7 @@ export function GalleryPage() {
               Gallery
             </h1>
             <p className="text-xl text-primary-100 max-w-2xl mx-auto">
-              A look at our machinery, factory floor, and the craftsmanship behind every build.
+              Real photographs of the machines we build — browse by category or view the full range below.
             </p>
           </motion.div>
         </div>
@@ -124,6 +126,44 @@ export function GalleryPage() {
             <p className="p-4 text-sm text-secondary-600">{activeItem.category}</p>
           </div>
         )}
+      </Modal>
+
+      {/* Video Showcase */}
+      <Section background="white">
+        <div className="max-w-3xl mx-auto text-center mb-8">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl text-secondary-900 mb-3">
+            Watch Our Machinery in Action
+          </h2>
+          <p className="text-secondary-600">
+            A short walkthrough of our machines running on the production floor.
+          </p>
+        </div>
+        <button
+          onClick={() => setIsVideoOpen(true)}
+          className="group relative block w-full max-w-3xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-medium"
+          aria-label="Play factory & machinery video"
+        >
+          <img
+            src={productPhoto(15)}
+            alt="Smart Conveyor System — video thumbnail"
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+            <span className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-accent-500 text-secondary-900 flex items-center justify-center shadow-strong group-hover:scale-110 transition-transform">
+              <Play className="w-7 h-7 md:w-8 md:h-8 ml-1" />
+            </span>
+          </div>
+        </button>
+      </Section>
+
+      <Modal isOpen={isVideoOpen} onClose={() => setIsVideoOpen(false)} size="full" title="Our Machinery in Action">
+        <video
+          key={isVideoOpen ? 'open' : 'closed'}
+          src={factoryVideo}
+          controls
+          autoPlay
+          className="w-full rounded-xl bg-black"
+        />
       </Modal>
 
       {/* CTA */}

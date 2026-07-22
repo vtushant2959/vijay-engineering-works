@@ -153,7 +153,7 @@ export function ProductsPage() {
                     transition={{ delay: index * 0.05 }}
                   >
                     <Card padding="none" hover className="group overflow-hidden h-full flex flex-col">
-                      <div className="relative aspect-[4/3] overflow-hidden">
+                      <div className="relative aspect-square overflow-hidden bg-secondary-50">
                         <img
                           src={product.images[0]}
                           alt={product.name}

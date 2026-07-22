@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { LinkButton, ArrowRight, Play, Check } from '../../components/ui';
-import { pick, factoryImages } from '../../data/images';
+import { LinkButton, Modal, ArrowRight, Play, Check } from '../../components/ui';
+import { productPhoto, factoryVideo } from '../../data/images';
 
 export function HeroSection() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+
   const highlights = [
     '35+ Years of Excellence',
     'ISO 9001:2015 Certified',
@@ -78,9 +81,9 @@ export function HeroSection() {
           >
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-primary-600/30 backdrop-blur-sm border border-white/10">
               <img
-                src={pick(factoryImages, 5, 800)}
-                alt="Industrial footwear machinery in manufacturing facility"
-                className="w-full h-full object-cover opacity-80"
+                src={productPhoto(15)}
+                alt="Smart Conveyor System on our production floor"
+                className="w-full h-full object-cover opacity-90"
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
@@ -107,8 +110,9 @@ export function HeroSection() {
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             >
               <button
+                onClick={() => setIsVideoOpen(true)}
                 className="w-20 h-20 rounded-full bg-accent-500 text-secondary-900 flex items-center justify-center shadow-strong hover:scale-110 transition-transform"
-                aria-label="Play company video"
+                aria-label="Play factory & machinery video"
               >
                 <Play className="w-8 h-8 ml-1" />
               </button>
@@ -123,6 +127,16 @@ export function HeroSection() {
           <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
         </svg>
       </div>
+
+      <Modal isOpen={isVideoOpen} onClose={() => setIsVideoOpen(false)} size="full" title="Our Machinery in Action">
+        <video
+          key={isVideoOpen ? 'open' : 'closed'}
+          src={factoryVideo}
+          controls
+          autoPlay
+          className="w-full rounded-xl bg-black"
+        />
+      </Modal>
     </section>
   );
 }

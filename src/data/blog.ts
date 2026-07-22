@@ -1,4 +1,4 @@
-import { machineryImages, leatherImages, factoryImages, pick } from './images';
+import { productPhoto } from './images';
 
 export interface BlogPost {
   slug: string;
@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'getting-started-shoe-factory',
     title: 'How to Start a Shoe Manufacturing Unit in India',
     excerpt: 'A comprehensive guide covering licenses, machinery selection, factory layout, and operational tips for new entrepreneurs.',
-    image: pick(factoryImages, 0, 900),
+    image: productPhoto(15),
     category: 'Business Guide',
     author: 'Vijay Kumar',
     authorRole: 'Founder & Managing Director',
@@ -51,7 +51,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'choosing-sole-press',
     title: 'Choosing the Right Sole Press Machine for Your Factory',
     excerpt: 'Learn about different types of sole press machines, their capabilities, and how to select the best one for your production needs.',
-    image: pick(machineryImages, 4, 900),
+    image: productPhoto(19),
     category: 'Technical',
     author: 'Amit Sharma',
     authorRole: 'Senior Design Engineer',
@@ -66,14 +66,14 @@ export const blogPosts: BlogPost[] = [
       <h2>Temperature Control</h2>
       <p>Digital, programmable temperature control (rather than analog dials) reduces rework significantly, especially when switching between adhesive types through the day.</p>
       <h2>Our Recommendation</h2>
-      <p>For most mid-size Indian factories, the <a href="/products/auto-sole-press-spm-100">Auto Sole Press SPM-100</a> hits the sweet spot of tonnage, footprint, and energy efficiency. Factories running export-scale volumes should look at our twin-station SPM-220.</p>
+      <p>For most mid-size Indian factories, our <a href="/products/sole-press-machine">Sole Press Machine</a> hits the sweet spot of footprint and throughput with its twin independent stations. Factories running higher, continuous volumes should look at our <a href="/products/drum-sole-press-machine">Drum Sole Press Machine</a> instead.</p>
     `,
   },
   {
     slug: 'maintenance-tips',
     title: '10 Maintenance Tips to Extend Machine Life',
     excerpt: 'Regular maintenance practices that can significantly improve machine longevity and reduce downtime.',
-    image: pick(machineryImages, 18, 900),
+    image: productPhoto(24),
     category: 'Maintenance',
     author: 'Rajesh Verma',
     authorRole: 'Head of Service & AMC',
@@ -101,7 +101,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'energy-efficient-machinery',
     title: 'Energy-Efficient Footwear Machinery: Cost Savings',
     excerpt: 'How modern machinery design reduces energy consumption and operational costs for shoe factories.',
-    image: pick(factoryImages, 2, 900),
+    image: productPhoto(27),
     category: 'Technology',
     author: 'Priya Sharma',
     authorRole: 'R&D Lead',
@@ -121,7 +121,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'leather-cutting-precision',
     title: 'Getting Precision Right in Leather Cutting',
     excerpt: 'Why cutting accuracy matters more than most factories realize, and how to reduce material wastage.',
-    image: pick(leatherImages, 4, 900),
+    image: productPhoto(31),
     category: 'Technical',
     author: 'Amit Sharma',
     authorRole: 'Senior Design Engineer',
@@ -141,7 +141,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'safety-footwear-standards',
     title: 'Understanding IS Standards for Safety Footwear Manufacturing',
     excerpt: 'A practical overview of the Indian Standards that govern safety shoe production and what they mean for your machinery choices.',
-    image: pick(machineryImages, 13, 900),
+    image: productPhoto(23),
     category: 'Business Guide',
     author: 'Vijay Kumar',
     authorRole: 'Founder & Managing Director',
@@ -152,7 +152,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Key Standards to Know</h2>
       <p>IS 15298 covers general safety footwear requirements, including toe-cap impact resistance and sole bonding strength — both of which depend heavily on press tonnage consistency and platen temperature control.</p>
       <h2>Machinery Implications</h2>
-      <p>Steel-toe insertion and heavy-duty pressing both need machines rated for the higher tonnage safety components require — see our <a href="/products/heavy-duty-hydraulic-press-hpm-120">Heavy-Duty Hydraulic Press HPM-120</a> for an example built specifically for this segment.</p>
+      <p>Heavy-duty pressing and consistent shape retention both matter for safety components — see our <a href="/products/drum-sole-press-machine">Drum Sole Press Machine</a> and <a href="/products/heat-setter-machine">Heat Setter Machine</a> for examples built for this segment.</p>
       <h2>Documentation</h2>
       <p>Keep machine calibration certificates on file — auditors increasingly ask for them alongside the finished-product test reports.</p>
     `,

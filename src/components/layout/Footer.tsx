@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom';
 import { Facebook, LinkedIn, Twitter, YouTube, Instagram, MapPin, Phone, Envelope, Clock, ArrowRight } from '../ui';
 import { NewsletterForm } from './NewsletterForm';
 import { LogoMark } from './LogoMark';
+import { categories as productCategories } from '../../data/products';
 
 const footerLinks = {
   products: [
-    { label: 'Shoe Making Machines', href: '/products?category=shoe-making-machines' },
-    { label: 'Sole Press Machines', href: '/products?category=sole-press-machines' },
-    { label: 'Hydraulic Press Machines', href: '/products?category=hydraulic-press-machines' },
-    { label: 'Shoe Cutting Machines', href: '/products?category=shoe-cutting-machines' },
-    { label: 'Conveyor Systems', href: '/products?category=conveyor-systems' },
+    ...productCategories.slice(0, 5).map((category) => ({
+      label: category.name,
+      href: `/products?category=${category.id}`,
+    })),
     { label: 'View All Products', href: '/products' },
   ],
   services: [
